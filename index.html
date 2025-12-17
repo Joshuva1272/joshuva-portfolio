@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshuva Jeemon | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <canvas id="fluid-canvas"></canvas>
-
     <nav>
         <a href="index.html" class="logo">JOSHUVA.DEV</a>
         <ul class="nav-links">
@@ -20,37 +21,43 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <main>
         <section class="hero">
-            <h1 id="typewriter">Data Science. Education. Innovation.</h1>
+            <h1 id="hacker-text" data-value="Data Science. Education. Innovation.">Data Science. Education. Innovation.</h1>
             <p class="subtitle">Available for Hire Worldwide</p>
             <p class="bio" style="max-width: 600px; color: var(--text-secondary); margin-bottom: 40px;">
                 MSc Candidate & IT Faculty at Explore Education. I transform complex data into strategic business insights, bridging the gap between algorithms and practical application in education and industry.
             </p>
-            <a href="contact.html" class="btn">Get in Touch</a>
+            <a href="contact.html" class="btn"><i class="ri-mail-send-line"></i> Get in Touch</a>
+        </section>
+
+        <section class="dashboard-section">
+            <div class="dashboard-header">
+                <h2><i class="ri-dashboard-3-line"></i> Analytics Command Center</h2>
+                <div class="live-indicator"><span class="blink-dot"></span> System Online</div>
+            </div>
+            <div class="kpi-grid">
+                <div class="kpi-card"><div class="kpi-icon"><i class="ri-database-2-line"></i></div><div class="kpi-content"><h3>Data Processed</h3><p><span class="counter" data-target="2500000">0</span>+</p></div></div>
+                <div class="kpi-card"><div class="kpi-icon"><i class="ri-focus-3-line"></i></div><div class="kpi-content"><h3>Model Accuracy</h3><p><span class="counter" data-target="94">0</span>.8%</p></div></div>
+                <div class="kpi-card"><div class="kpi-icon"><i class="ri-rocket-line"></i></div><div class="kpi-content"><h3>Projects Shipped</h3><p><span class="counter" data-target="45">0</span>+</p></div></div>
+                <div class="kpi-card"><div class="kpi-icon"><i class="ri-group-line"></i></div><div class="kpi-content"><h3>Students Mentored</h3><p><span class="counter" data-target="120">0</span>+</p></div></div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="chart-card"><h3>Core Proficiency Matrix</h3><div class="canvas-container"><canvas id="skillsChart"></canvas></div></div>
+                <div class="chart-card"><h3>Operational Impact</h3><div class="canvas-container"><canvas id="impactChart"></canvas></div></div>
+                <div class="chart-card"><h3>Tech Stack Distribution</h3><div class="canvas-container"><canvas id="toolsChart"></canvas></div></div>
+            </div>
         </section>
 
         <section style="margin-top: 80px;">
             <h2>Core Competencies</h2>
             <div class="grid-container">
-                <div class="card">
-                    <h3>Machine Learning</h3>
-                    <p>Advanced predictive modeling using Python & Scikit-Learn. Expert in Logistic Regression and propensity modeling for business insights.</p>
-                </div>
-                <div class="card">
-                    <h3>Visual Analytics</h3>
-                    <p>Turning raw numbers into executive narratives using Power BI and Tableau. Design-led dashboard architecture.</p>
-                </div>
-                <div class="card">
-                    <h3>Data Engineering</h3>
-                    <p>Robust pipeline construction with SQL and R. Automating CRM workflows to reduce manual redundancy.</p>
-                </div>
+                <div class="card"><h3><i class="ri-brain-line" style="color:var(--accent);"></i> Machine Learning</h3><p>Advanced predictive modeling using Python & Scikit-Learn. Expert in Logistic Regression and propensity modeling for business insights.</p></div>
+                <div class="card"><h3><i class="ri-bar-chart-grouped-line" style="color:var(--accent);"></i> Visual Analytics</h3><p>Turning raw numbers into executive narratives using Power BI and Tableau. Design-led dashboard architecture.</p></div>
+                <div class="card"><h3><i class="ri-server-line" style="color:var(--accent);"></i> Data Engineering</h3><p>Robust pipeline construction with SQL and R. Automating CRM workflows to reduce manual redundancy.</p></div>
             </div>
         </section>
     </main>
-
     <script src="script.js"></script>
 </body>
-
 </html>
